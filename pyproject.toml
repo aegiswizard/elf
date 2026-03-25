@@ -1,0 +1,55 @@
+[build-system]
+requires      = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name        = "elf-scanner"
+version     = "1.0.0"
+description = "136-check GitHub repository safety scanner for AI agents. Safe | Warn | Not Safe."
+readme      = "README.md"
+license     = { text = "MIT" }
+authors     = [{ name = "Aegis Wizard" }]
+keywords    = [
+    "github", "security", "supply-chain", "agent", "safety",
+    "prompt-injection", "osint", "scanner", "llm", "ai-safety"
+]
+requires-python = ">=3.9"
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+# Zero required runtime dependencies — Python stdlib only
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "black>=23.0", "ruff>=0.1"]
+
+[project.scripts]
+elf = "elf.cli:main"
+
+[project.urls]
+Homepage   = "https://github.com/aegiswizard/elf"
+Repository = "https://github.com/aegiswizard/elf"
+Issues     = "https://github.com/aegiswizard/elf/issues"
+
+[tool.setuptools.packages.find]
+where   = ["."]
+include = ["elf*"]
+
+[tool.black]
+line-length    = 100
+target-version = ["py39"]
