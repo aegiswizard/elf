@@ -1,7 +1,7 @@
 # 🧝 Elf
 
-**136-check GitHub repository safety scanner for AI agents and humans.**  
-**Safe. Warn. Not Safe. One URL. Any agent. Zero dependencies.**
+**136-check GitHub repository safety scanner for AI agents.**  
+**Safe. Not Safe. Warn. One URL. Any agent. Zero dependencies.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org)
